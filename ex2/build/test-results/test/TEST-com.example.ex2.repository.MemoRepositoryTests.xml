@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.ex2.repository.MemoRepositoryTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-08-12T15:38:42" hostname="DESKTOP-EA5D1FS" time="0.603">
+  <properties/>
+  <testcase name="testSelect()" classname="com.example.ex2.repository.MemoRepositoryTests" time="0.603"/>
+  <system-out><![CDATA[00:38:37.541 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.ex2.repository.MemoRepositoryTests]: MemoRepositoryTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+00:38:37.668 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.ex2.Ex2Application for test class com.example.ex2.repository.MemoRepositoryTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.2)
+
+2024-08-13T00:38:38.126+09:00  INFO 3716 --- [ex2] [    Test worker] c.e.ex2.repository.MemoRepositoryTests   : Starting MemoRepositoryTests using Java 17.0.10 with PID 3716 (started by Administrator in C:\Users\Administrator\Desktop\ex2)
+2024-08-13T00:38:38.128+09:00  INFO 3716 --- [ex2] [    Test worker] c.e.ex2.repository.MemoRepositoryTests   : No active profile set, falling back to 1 default profile: "default"
+2024-08-13T00:38:38.846+09:00  INFO 3716 --- [ex2] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-13T00:38:38.914+09:00  INFO 3716 --- [ex2] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 56 ms. Found 1 JPA repository interface.
+2024-08-13T00:38:39.471+09:00  INFO 3716 --- [ex2] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-13T00:38:39.544+09:00  INFO 3716 --- [ex2] [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-13T00:38:39.587+09:00  INFO 3716 --- [ex2] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-13T00:38:40.003+09:00  INFO 3716 --- [ex2] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-13T00:38:40.043+09:00  INFO 3716 --- [ex2] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-13T00:38:40.152+09:00  INFO 3716 --- [ex2] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@6e517c9e
+2024-08-13T00:38:40.155+09:00  INFO 3716 --- [ex2] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-13T00:38:41.107+09:00  INFO 3716 --- [ex2] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-13T00:38:41.156+09:00  INFO 3716 --- [ex2] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-13T00:38:41.319+09:00  WARN 3716 --- [ex2] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-13T00:38:42.124+09:00  INFO 3716 --- [ex2] [    Test worker] c.e.ex2.repository.MemoRepositoryTests   : Started MemoRepositoryTests in 4.26 seconds (process running for 5.56)
+Hibernate: 
+    select
+        m1_0.mno,
+        m1_0.memo_text 
+    from
+        tb1_memo m1_0 
+    where
+        m1_0.mno=?
+===============================
+Memo(mno=100, memoText=Sample...100)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
